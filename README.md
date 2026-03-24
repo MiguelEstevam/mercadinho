@@ -293,15 +293,6 @@ Ao explorar este projeto, você aprenderá:
 ✅ Como lidar com falhas parciais em sistemas distribuídos  
 ✅ Padrões de resiliência recomendados pela indústria  
 
-## 📖 Referências
-
-- [Microsoft - Retry Pattern](https://docs.microsoft.com/azure/architecture/patterns/retry)
-- [AWS - Timeouts and Retries](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)
-- [Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
-
-## 📝 Licença
-
-Este é um projeto educacional livre para uso e modificação.
 
 ---
 
