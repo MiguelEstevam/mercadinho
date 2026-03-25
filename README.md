@@ -39,13 +39,34 @@ O fluxo completo do sistema segue a seguinte estrutura:
 ### Pré-requisitos
 
 - Python 3.7+
-- Nenhuma dependência externa (usa apenas biblioteca padrão)
+- pip (gerenciador de pacotes Python)
 
-### Executando o Projeto
 
+### Opção 2: Interface Web (Recomendado) 🌟
+
+1. **Instalar dependências:**
 ```bash
-python loja.py
+pip install -r requirements.txt
 ```
+
+2. **Iniciar o servidor:**
+```bash
+python server.py
+```
+
+3. **Acessar no navegador:**
+```
+http://localhost:8080
+```
+
+O frontend web oferece:
+- ✨ Interface moderna e elegante com design neon
+- 🎯 Seleção visual de produtos com emojis
+- 🛒 Carrinho interativo em tempo real
+- 🧪 Alternância fácil entre modos de simulação
+- 📊 Visualização detalhada do processamento do pedido
+- 🎨 Animações e efeitos visuais suaves
+- 📱 Layout responsivo para desktop e mobile
 
 ### Modos de Teste Disponíveis
 
@@ -59,8 +80,10 @@ python loja.py
 
 ```
 mercadinho-24h/
-├── loja.py                    # Interface de compra (CLI)
 ├── gateway.py                 # Gateway com padrões de resiliência
+├── server.py                  # Servidor web backend (API REST)
+├── index.html                 # Interface web moderna (frontend)
+├── requirements.txt           # Dependências Python
 ├── arquitetura.png            # Diagrama da arquitetura do sistema
 ├── fallback_orders.json       # Arquivo de fallback (gerado automaticamente)
 └── README.md                  # Este arquivo
@@ -113,11 +136,33 @@ async def process_order(order, simulate=None):
 
 ### `loja.py` - Interface de Compra
 
+**Versão CLI (Terminal):**
 Interface CLI amigável com:
 - Catálogo de 8 produtos
 - Carrinho de compras
 - 3 opções de pagamento
 - Resumo detalhado do processamento
+
+**Versão Web (Moderna):**
+A interface web (`index.html` + `server.py`) oferece uma experiência visual superior:
+- Design neon futurista com gradientes e efeitos de brilho
+- Grid responsivo de produtos com cards interativos
+- Carrinho lateral em tempo real com cálculo automático
+- Seletor visual de modos de simulação
+- Modal elegante para exibição de resultados
+- Animações suaves e transições fluidas
+- Compatível com desktop e dispositivos móveis
+
+**Arquitetura do Frontend:**
+```
+Cliente (Navegador)
+    ↓
+index.html (Interface + JavaScript)
+    ↓
+server.py (API REST com aiohttp)
+    ↓
+gateway.py (Processamento com resiliência)
+```
 
 ## 🧪 Cenários de Teste
 
@@ -293,6 +338,15 @@ Ao explorar este projeto, você aprenderá:
 ✅ Como lidar com falhas parciais em sistemas distribuídos  
 ✅ Padrões de resiliência recomendados pela indústria  
 
+## 📖 Referências
+
+- [Microsoft - Retry Pattern](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- [AWS - Timeouts and Retries](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)
+- [Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+
+## 📝 Licença
+
+Este é um projeto educacional livre para uso e modificação.
 
 ---
 
