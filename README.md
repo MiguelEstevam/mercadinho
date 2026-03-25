@@ -191,7 +191,7 @@ gateway.py (Processamento com resiliência)
 ### 4. Fallback - Payment Offline
 ```
 → Payment Gateway offline
-→ FALLBACK: aceito "pagamento na entrega"
+→ FALLBACK: Pagamento entra em fila
 → Pedido prossegue normalmente
 ```
 

@@ -49,11 +49,11 @@ def save_fallback_order(order: dict) -> str:
     return f"pedido salvo em fila local (fallback_orders.json)"
  
 def payment_fallback(order: dict) -> dict:
-    """Fallback de pagamento: aceita pedido com pagamento na entrega."""
+    """Fallback de pagamento: aceita pedido pagamento entra na fila."""
     return {
         "status": "accepted_fallback",
-        "payment_method": "na entrega",
-        "message": "Pagamento indisponível - aceito pagamento na entrega",
+        "payment_method": "entra em fila",
+        "message": "Pagamento indisponível - Será processado posteriormente",
         "order_id": order["order_id"],
     }
  

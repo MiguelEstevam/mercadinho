@@ -1,30 +1,30 @@
 [
   {
-    "order_id": "ORD-A71C0C69",
+    "order_id": "ORD-B984D8C9",
     "items": [
       {
         "name": "Salgadinho",
         "price": 4.5,
-        "qty": 3,
-        "subtotal": 13.5
+        "qty": 2,
+        "subtotal": 9
       }
     ],
-    "total": 13.5,
+    "total": 9,
     "payment_method": "PIX",
-    "created_at": "2026-03-24T22:38:53.288827",
-    "fallback_at": "2026-03-24T22:38:58.300083"
+    "created_at": "2026-03-24T23:13:02.049910",
+    "fallback_at": "2026-03-24T23:13:07.051797"
   },
   {
     "type": "ORDER_COMPLETED",
-    "order_id": "ORD-C70231EE",
+    "order_id": "ORD-648CB641",
     "payment": {
-      "payment_id": "PAY-1774402763",
-      "order_id": "ORD-C70231EE",
+      "payment_id": "PAY-1774404863",
+      "order_id": "ORD-648CB641",
       "method": "PIX",
       "status": "approved",
-      "approved_at": "2026-03-24T22:39:23.200513"
+      "approved_at": "2026-03-24T23:14:23.871195"
     },
-    "ts": "2026-03-24T22:39:23.200855",
-    "fallback_at": "2026-03-24T22:39:23.201453"
+    "ts": "2026-03-24T23:14:23.871419",
+    "fallback_at": "2026-03-24T23:14:23.871732"
   }
 ]
