@@ -42,7 +42,7 @@ O fluxo completo do sistema segue a seguinte estrutura:
 - pip (gerenciador de pacotes Python)
 
 
-### Opção 2: Interface Web (Recomendado) 🌟
+Interface Web 🌟
 
 1. **Instalar dependências:**
 ```bash
@@ -133,8 +133,6 @@ async def process_order(order, simulate=None):
     # 4. Notification (async, best-effort)
     #    └─ Retry: até 3 tentativas, falha silenciosa
 ```
-
-### `loja.py` - Interface de Compra
 
 **Versão CLI (Terminal):**
 Interface CLI amigável com:
@@ -337,16 +335,6 @@ Ao explorar este projeto, você aprenderá:
 ✅ Diferença entre comunicação síncrona e assíncrona  
 ✅ Como lidar com falhas parciais em sistemas distribuídos  
 ✅ Padrões de resiliência recomendados pela indústria  
-
-## 📖 Referências
-
-- [Microsoft - Retry Pattern](https://docs.microsoft.com/azure/architecture/patterns/retry)
-- [AWS - Timeouts and Retries](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)
-- [Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
-
-## 📝 Licença
-
-Este é um projeto educacional livre para uso e modificação.
 
 ---
 
